@@ -7,7 +7,7 @@
 	<artifactId>eventos-dto</artifactId>
 	<version>1.0.1</version>
 	<packaging>jar</packaging>
-	<name>api-eventos-dto</name>
+	<name>eventos-dto</name>
 	<description></description>
 
 	<properties>
@@ -18,6 +18,14 @@
 		<sonar.dependencyCheck.reportPath>${basedir}/dependency-check-report.xml</sonar.dependencyCheck.reportPath>
 	</properties>
 
+	<distributionManagement>
+	   <repository>
+	     <id>github</id>
+	     <name>GitHub OWNER Apache Maven Packages</name>
+	     <url>https://maven.pkg.github.com/br-comprasa2/eventos-dto</url>
+	   </repository>
+	</distributionManagement>
+	
 	<dependencies>
 		<dependency>
 		    <groupId>com.fasterxml.jackson.core</groupId>
@@ -37,7 +45,7 @@
 	</dependencies>
 
     <build>
-        <finalName>api-eventos-dto</finalName>
+        <finalName>eventos-dto</finalName>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
